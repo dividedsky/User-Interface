@@ -68,20 +68,26 @@ h1, h2, h3, h4, h5 {
 
 header {
 	margin-bottom: 50px;
-	border: 1px solid green;
+	/*border: 1px solid green;*/
+	position: relative;
+	height: 40px;
 }
 header nav {
 	display: inline;
+	height: 100%;
 }
 header nav a {
 	color: gray;
 	font-size: 11px;
-	margin: 5px 40px;
-
+	padding: 5px 40px;
+	text-decoration: none;
 }
 
 header img {
 	margin-left: 20px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
 }
 
 img {
@@ -89,11 +95,12 @@ img {
 }
 section {
 	display: inline;
+	width: 100%;
 }
 
 .container {
-	border: 5px solid purple;
-	width: 55%;
+	/*border: 5px solid purple;*/
+	width: 950px;
 	margin: 0 auto;
 	padding: 20px;
 	position: relative;
@@ -101,7 +108,7 @@ section {
 
 .top-section {
 	display: inline-block;
-	border: 5px solid blue;
+	/*border: 5px solid blue;*/
 	width: 100%;
 	padding: 0 20px;
 	position: relative;
@@ -114,7 +121,7 @@ section {
 }
 
 .main-content {
-	border: 5px solid red;
+	/*border: 5px solid red;*/
 	display: inline-block;
 
 }
@@ -125,7 +132,7 @@ section {
 
 .top-section h1{
 	font-size: 80px;
-	border: 1px solid gray;
+	/*border: 1px solid gray;*/
 	display: inline-block;
 	margin-top: 80px;
 	position: absolute;
@@ -135,18 +142,18 @@ section {
 }
 
 .top-section img {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	display: inline-block;
 	position: absolute;
-	right: 40px;
+	right: -20px;
 }
 
 .top-section button {
-	width: 200px;
+	width: 160px;
 	height: 25px;
 	position: absolute;
-	left: 61px;
-	top: 300px;
+	left: 107px;
+	top: 340px;
 	font-size: 16px;
 	background: white;
 	
@@ -156,36 +163,51 @@ section {
 .two-column section {
 	width: 48%;
 	display: inline-block;
-	margin: 10px 0;
-	border: 1px solid purple;
+	margin: 10px 0px 20px 0;
+	/*border: 1px solid purple;*/
 }
 
 .left {
-	text-align: left;
 	margin-right: 10px;
 }
 
 .right {
-	text-align: left;
+	position: absolute;
 	right: 0px;
-	margin-left: 80px;
+}
+
+.center {
+	position: absolute;
+	left: 40px;
+	width: 31%;
+
+}
+
+.main-content img {
+	width: 100%;
+	height: auto;
 }
 
 
 
 .three-column section {
-	width: 26%;
+	width: 31%;
 	display: inline-block;
-	border: 1px solid green;
-	margin: 0px auto;
+	/*border: 1px solid green;*/
+	margin: 20px 0;
+	position: relative;
 }
 
+.three-column .right {
+	position: absolute;
+	right: 0px;
+}
 footer p {
 	margin-top: 10px;
 }
 footer p:last-of-type {
 	text-align: center;
 	font-size: 10px;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	color: rgb(156, 156, 156);
 }
